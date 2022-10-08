@@ -1,4 +1,5 @@
 // Courts 
+// Lockerroom 
 // Basketball
 // Player 
 // Conession 
@@ -8,16 +9,25 @@
 // Press 
 // Ticket Counters 
 // Secrurity 
+import  {useState, useEffect} from 'react';
+
 import Court from './Court';
 
 const Stadium = () => {
     // State will go here
-    // const[court, setCourt] = useState('');
+    const[players, setPlayers] = useState([
+        {name: 'Devman Curry', position: 'PG', number: 30},
+        {name: 'Ohziii Lov3', position: 'SG', number: 9},
+        {name: 'ja Morant', position: 'PG', number: 5},
+        {name: 'Lamar Jackson', position: 'SG', number: 8},
+        {name: 'Joel Embid', position: 'C', number: 3},
+       
+    ]);
 
 
   return (
     <div>
-        <Court/>
+        <Court players={players} setPlayers={setPlayers} />
     </div>
   )
 }
