@@ -18,12 +18,14 @@ const Stadium = () => {
     const[players, setPlayers] = useState([
         {name: 'Devman Curry', position: 'PG', number: 30},
         {name: 'Ohziii Lov3', position: 'SG', number: 9},
-        {name: 'ja Morant', position: 'PG', number: 5},
+        {name: 'Ja Morant', position: 'PG', number: 5},
         {name: 'Lamar Jackson', position: 'SG', number: 8},
         {name: 'Joel Embid', position: 'C', number: 3},
        
     ]);
 
+
+    
 
   return (
     <div>
